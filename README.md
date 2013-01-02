@@ -1,11 +1,12 @@
 random-colors
 =============
 
+Evenly distributed random color generator for Objective-C. 
+
 About
 ------
-Evenly distributed random color generator for Objective-C 
 
-This function randomly generates distinct colors with consistent lightness and saturation using [the Golden Ratio](http://en.wikipedia.org/wiki/Golden_ratio)
+This function randomly generates distinct colors with consistent lightness and saturation using [the Golden Ratio](http://en.wikipedia.org/wiki/Golden_ratio).
 
 Usage
 ------
