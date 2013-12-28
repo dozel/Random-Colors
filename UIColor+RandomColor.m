@@ -1,18 +1,16 @@
 //
-//  RandomColor.m
+//  UIColor+RandomColor.m
 //
 //
-//  Created by Devin Ozel on 1/2/13.
-//  Code by Martin Ankerl
-//  http://martin.ankerl.com/2009/12/09/how-to-create-random-colors-programmatically/
+//  Created by Devin Ozel on 12/27/13.
+//  Copyright (c) 2013 Devin Ozel. All rights reserved.
 //
 
-#import "RandomColor.h"
+#import "UIColor+RandomColor.h"
 
-@implementation RandomColor
+@implementation UIColor (RandomColor)
 
-
-+ (UIColor *) generateRandomColor {
++ (UIColor *) randomColor {
     float golden_ratio_conjugate = 0.618033988749895;
     float h = (float)rand() / RAND_MAX;
     h += golden_ratio_conjugate;
@@ -20,6 +18,5 @@
     UIColor *tempColor = [UIColor colorWithHue:h saturation:0.5 brightness:0.95 alpha:1];
     return tempColor;
 }
-
 
 @end
